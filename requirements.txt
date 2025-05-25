@@ -1,5 +1,5 @@
 streamlit
 snowflake-connector-python
-matplotlib.pyplot
+matplotlib
 pandas
 pydeck
