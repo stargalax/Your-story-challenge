@@ -84,13 +84,13 @@ pip install -r requirements.txt
 ### 3. Add snowflake credentials
 *create a file named: .streamlit/secrets.toml*
 Then paste your details
-[snowflake]
-user = "your_username"
-password = "your_password"
-account = "your_account"
-warehouse = "your_warehouse"
-database = "your_database"
-schema = "your_schema"
+- [snowflake]
+- user = "your_username"
+- password = "your_password"
+- account = "your_account"
+- warehouse = "your_warehouse"
+- database = "your_database"
+- schema = "your_schema"
 ### 4. Run the app
 ``` bash
 streamlit run app.py
