@@ -5,3 +5,4 @@ pydeck
 numpy
 openpyxl           
 geopy 
+matplotlib.pyplot
