@@ -134,33 +134,29 @@ if view_mode == "Map View":
 elif view_mode == "Analytics":
     st.header("Heritage Analytics")
 
-    # Pie chart: distribution of heritage by city
-    city_counts = df['CITY_NAME'].value_counts()
-    st.subheader("Heritage Distribution by City")
-    
-    # Centered pie chart
+    # Centered layout for pie chart
+    st.markdown("### Heritage Distribution by City")
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        fig1, ax1 = plt.subplots(figsize=(4, 4))
-        ax1.pie(city_counts, labels=city_counts.index, autopct='%1.1f%%', startangle=140, textprops={'fontsize': 8})
+        fig1, ax1 = plt.subplots(figsize=(5, 5))
+        city_counts = df['CITY_NAME'].value_counts()
+        ax1.pie(city_counts, labels=city_counts.index, autopct='%1.1f%%', startangle=140)
         ax1.axis('equal')
         st.pyplot(fig1)
 
-    # Bar chart: heritage type distribution in a selected city
-    st.subheader("Heritage Type Distribution in Selected City")
+    # Heritage type distribution
+    st.markdown("### Heritage Type Distribution in Selected City")
     selected_city = st.selectbox("Select City", sorted(cities))
 
     city_df = df[df['CITY_NAME'] == selected_city]
     type_counts = city_df['HERITAGE_TYPE'].value_counts()
 
-    # Centered bar chart
     col4, col5, col6 = st.columns([1, 2, 1])
     with col5:
-        fig2, ax2 = plt.subplots(figsize=(5, 3))
+        fig2, ax2 = plt.subplots(figsize=(6, 4))
         ax2.bar(type_counts.index, type_counts.values, color='skyblue')
-        ax2.set_xlabel("Heritage Type", fontsize=9)
-        ax2.set_ylabel("Count", fontsize=9)
-        ax2.set_title(f"{selected_city}", fontsize=10)
-        ax2.tick_params(axis='x', rotation=45, labelsize=8)
-        ax2.tick_params(axis='y', labelsize=8)
+        ax2.set_xlabel("Heritage Type")
+        ax2.set_ylabel("Count")
+        ax2.set_title(f"Distribution of Heritage Types in {selected_city}")
+        ax2.tick_params(axis='x', rotation=45)
         st.pyplot(fig2)
