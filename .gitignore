@@ -1,0 +1,23 @@
+# --- Streamlit ---
+.streamlit/secrets.toml
+
+# --- Python Bytecode ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# --- Environment Files ---
+.env
+*.env
+
+# --- Jupyter Notebooks Checkpoints (if any) ---
+.ipynb_checkpoints
+
+# --- Data and Raw Files You Mentioned ---
+*.xlsx
+*.csv
+*.txt
+
+
+
