@@ -38,26 +38,33 @@ To build a lightweight yet powerful tool that makes heritage site information mo
 
 ## 📷 Snapshots
 
-![image](https://github.com/user-attachments/assets/782e63df-ea9d-420d-bb60-0c42820b66cd)
+![image](https://github.com/user-attachments/assets/098ab382-4493-47f1-9f0f-4cd2e7a69119)
 
-*With filters applied:*
+*With State filter applied:*
 
-![image](https://github.com/user-attachments/assets/4707b7e6-1e34-4d86-9f22-119566f2b56e)
+![image](https://github.com/user-attachments/assets/8285f565-e8ba-410b-aa41-457ed4fab564)
+
+*With Heritage Type filter applied:*
+
+![image](https://github.com/user-attachments/assets/22828c03-ff31-4b88-ae57-81a260ed74c7)
+
 
 *Some analytics from the data:*
 
-![image](https://github.com/user-attachments/assets/bb99396b-2ef9-40a9-bdd1-7dddcb856331)
+![image](https://github.com/user-attachments/assets/82412ab5-8634-44eb-8540-675f2f58c358)
+
+![image](https://github.com/user-attachments/assets/e912835e-5955-416d-b457-516366723195)
 
 
 ---
 
 ## 🎥 Demo
 
-[![Watch Demo](https://img.youtube.com/vi/i902YFKiJ4M/0.jpg)](https://youtu.be/i902YFKiJ4M)
+[![Watch Demo](https://youtu.be/i902YFKiJ4M](https://youtu.be/tFqKoFghHFA))
 
 > Click the image above or the link below to watch the full demo on YouTube.
 
-🔗 **Demo YouTube Link**: https://youtu.be/i902YFKiJ4M
+🔗 **Demo YouTube Link**: [https://youtu.be/i902YFKiJ4M](https://youtu.be/tFqKoFghHFA)
 
 ---
 
@@ -100,6 +107,6 @@ The app will open in browser at: http://localhost:8501
 ---
 
 
-> Due of time constraint I have implemented the project with just data from one state ,  I will implement the project for rest of States and scale it with apis to fetch popularity and foot fall
-
+> Due to some technical issues, I was not able to implement the Google Maps API  (places api) for the estimated footfall calculation thus have listed it as future works.
+> Thank you for viewing my project.
 
