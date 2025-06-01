@@ -70,7 +70,7 @@ To build a lightweight yet powerful tool that makes heritage site information mo
 
 ## 🚀 Live App
 
-👉 **Live Streamlit App**: [https://your-story-challenge-8re2xtuchycke5f2dtgzs2.streamlit.app/](https://your-story-challenge-8re2xtuchycke5f2dtgzs2.streamlit.app/)
+👉 **Live Streamlit App**: [[https://your-story-challenge-8re2xtuchycke5f2dtgzs2.streamlit.app/](https://your-story-challenge-8re2xtuchycke5f2dtgzs2.streamlit.app/)](https://your-story-challenge-8re2xtuchycke5f2dtgzs2.streamlit.app/)
 
 No installation required — just open the link in your browser!
 
