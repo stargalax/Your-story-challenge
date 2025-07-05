@@ -31,22 +31,34 @@ def get_row_color(row, color_map, search_name):
 
 # Fetch from Snowflake
 @st.cache_data(show_spinner=True)
-def get_data():
-    conn = snowflake.connector.connect(
-        user=st.secrets["snowflake"]["user"],
-        password=st.secrets["snowflake"]["password"],
-        account=st.secrets["snowflake"]["account"],
-        warehouse=st.secrets["snowflake"]["warehouse"],
-        database=st.secrets["snowflake"]["database"],
-        schema=st.secrets["snowflake"]["schema"]
-    )
+# def get_data():
+#     conn = snowflake.connector.connect(
+#         user=st.secrets["snowflake"]["user"],
+#         password=st.secrets["snowflake"]["password"],
+#         account=st.secrets["snowflake"]["account"],
+#         warehouse=st.secrets["snowflake"]["warehouse"],
+#         database=st.secrets["snowflake"]["database"],
+#         schema=st.secrets["snowflake"]["schema"]
+#     )
 
+#     query = """
+#         SELECT STATE, CITY_NAME, HERITAGE_NAME, HERITAGE_TYPE, LAT, LON
+#         FROM HERITAGE_DATA
+#         WHERE LAT IS NOT NULL AND LON IS NOT NULL
+#     """
+#     df = pd.read_sql(query, conn)
+#     conn.close()
+#     return df
+@st.cache_data(show_spinner=True)
+def get_data():
+    import sqlite3
+    conn = sqlite3.connect("heritage.db")
     query = """
         SELECT STATE, CITY_NAME, HERITAGE_NAME, HERITAGE_TYPE, LAT, LON
         FROM HERITAGE_DATA
         WHERE LAT IS NOT NULL AND LON IS NOT NULL
     """
-    df = pd.read_sql(query, conn)
+    df = pd.read_sql_query(query, conn)
     conn.close()
     return df
 
@@ -93,7 +105,6 @@ if view_mode == "Map View":
     if search_name:
         filtered_df = filtered_df[filtered_df['HERITAGE_NAME'].str.lower().str.contains(search_name, na=False)]
 
-    # rest of your code remains unchanged here...
 
     color_map = assign_colors(df['HERITAGE_TYPE'].unique())
     filtered_df['COLOR'] = filtered_df.apply(lambda row: get_row_color(row, color_map, search_name), axis=1)

@@ -110,3 +110,6 @@ The app will open in browser at: http://localhost:8501
 > Due to some technical issues, I was not able to implement the Google Maps API  (places api) for the estimated footfall calculation thus have listed it as future works.
 > Thank you for viewing my project.
 
+> Due of time constraint I have implemented the project with just data from one state ,  I will implement the project for rest of States and scale it with apis to fetch popularity and foot fall
+
+>Have changed the DB to sqlite because the snowflake free cred is over!

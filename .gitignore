@@ -19,5 +19,6 @@ __pycache__/
 *.csv
 *.txt
 
-
-
+# --- Exclude SQLite DB ---
+*.db
+*.ipynb
