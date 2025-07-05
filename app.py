@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import snowflake.connector
+#import snowflake.connector
 import pydeck as pdk
 import matplotlib.pyplot as plt
 
