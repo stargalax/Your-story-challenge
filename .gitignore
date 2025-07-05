@@ -20,5 +20,5 @@ __pycache__/
 *.txt
 
 # --- Exclude SQLite DB ---
-*.db
+
 *.ipynb
