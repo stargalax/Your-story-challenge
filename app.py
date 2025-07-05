@@ -94,7 +94,11 @@ if view_mode == "Map View":
         selected_types = st.sidebar.multiselect("Filter by Heritage Type", sorted(filtered_types_for_states))
     else:
         filtered_df = df.copy()
+        #selected_types = st.sidebar.multiselect("Filter by Heritage Type", sorted(heritage_types))
+        heritage_types = df['HERITAGE_TYPE'].dropna().unique()
+        heritage_types = [t for t in heritage_types if str(t).strip() != '']
         selected_types = st.sidebar.multiselect("Filter by Heritage Type", sorted(heritage_types))
+
 
     # Apply heritage type filter
     if selected_types:
