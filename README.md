@@ -9,7 +9,7 @@ A Streamlit-powered interactive dashboard to explore, analyze, and visualize her
 To build a lightweight yet powerful tool that makes heritage site information more accessible and meaningful through:
 - **Real-time filtering** (state, city, type, use)
 - **Map-based visualization** using geolocation data
-- **Secure integration with Snowflake** for cloud data warehousing
+- **Secure integration with Snowflake** for cloud data warehousing   // Changed to Streamlit environment since I ran out of credits 
 - A smooth UI built with **Streamlit** for intuitive exploration
 
 ---
@@ -64,13 +64,13 @@ To build a lightweight yet powerful tool that makes heritage site information mo
 
 > Click the image above or the link below to watch the full demo on YouTube.
 
-🔗 **Demo YouTube Link**: [https://youtu.be/i902YFKiJ4M](https://youtu.be/tFqKoFghHFA)
+🔗 **Demo YouTube Link**: [Youtube link](https://youtu.be/HAvibcfTHfQ))
 
 ---
 
 ## 🚀 Live App
 
-👉 **Live Streamlit App**: [[https://your-story-challenge-8re2xtuchycke5f2dtgzs2.streamlit.app/](https://your-story-challenge-8re2xtuchycke5f2dtgzs2.streamlit.app/)](https://your-story-challenge-8re2xtuchycke5f2dtgzs2.streamlit.app/)
+👉 **Live Streamlit App**: [Web app link](https://tourismdatadashboard.streamlit.app/)
 
 No installation required — just open the link in your browser!
 
